@@ -65,14 +65,9 @@ void Game::Update()
 
     ImGui::SFML::Update(window, restart);
 
-    sf::Clock clock;
-    while (const std::optional event = window.pollEvent())
-    {
-        if (event->is<sf::Event::Closed>())
-        {
-            window.close();
-        }
-    }
+    //----------Game Code
+
+    //----------Game Code
 
     ImGui::Begin("Hello, world!");
     ImGui::Button("Look at this pretty button");
